@@ -1,0 +1,12 @@
+ConfigInfo 
+EDKII Menu -> Socket configuration -> Processor configuration ->Lock Chipset= Disable; LockChipset=0x0
+EDKII Menu -> Socket Configuration -> IIO configuration ->IIO DFX Configuration ->EV DFx feature= Enable; DFXEnable=0x1
+EDKII Menu-> Platform Configuration->System Event Log->System Errors= <Enable>; SystemErrorEn=0x1
+EDKII Menu-> Platform Configuration->System Event Log->Whea Settings->WHEA Support= <Enable>; WheaSupportEn=0x1
+EDKII Menu-> Platform Configuration->System Event Log->Error Injection Settings->WHEA Error Injection Support= <Enable>; WheaErrorInjSupportEn=0x1
+EDKII Menu-> Platform Configuration->System Event Log->Error Injection Settings->WHEA Error Injection 5.0 Extension= <Enable>; WheaErrInjEn=0x1
+EDKII Menu-> Platform Configuration->System Event Log->Memory Error Enabling->Spare Interrupt= SMI; SpareIntSelect=0x1
+EDKII Menu-> Socket Configuration->Memory Configuration->Memory RAS Configuration->Mirror Mode= <Partial Mirror Mode>; MirrorMode=0x3
+EDKII Menu-> Socket Configuration->Memory Configuration->Memory RAS Configuration->Partial Mirror1 Size (GB)=<4>; partialmirrorsize_0=0x4
+EDKII Menu-> Socket Configuration->Memory Configuration->Enforce Population POR= <Disable Enforcement>; EnforcePopulationPor=0x0
+EDKII Menu-> Socket Configuration->Uncore Configuration->Uncore General Configuration->Directory Mode Enable=<Disable>;DirectoryModeEn=0x1
