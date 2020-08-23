@@ -1,0 +1,23 @@
+EDKII Menu->Socket configuration->Processor configuration->Lock Chipset=Disable
+EDKII Menu->Socket Configuration->IIO configuration->IIO DFX Configuration->EV DFx features=Enable
+EDKII Menu->Platform Configuration->System Event Log->System Errors=Enable
+EDKII Menu->Platform Configuration->System Event Log->Whea Settings->WHEA Support=Enable
+EDKII Menu->Platform Configuration->System Event Log->Error Injection Settings->WHEA Error Injection Support=Enable
+EDKII Menu->Platform Configuration->System Event Log->Error Injection Settings->WHEA Error Injection 5.0 Extension=Enable
+EDKII Menu->Platform Configuration->System Event Log->Memory Error Enabling->Spare Interrupt=SMI
+EDKII Menu->Socket Configuration->Memory Configuration->Memory RAS Configuration->Mirror Mode=Partial Mirror Mode
+EDKII Menu->Socket Configuration->Memory Configuration->Memory RAS Configuration->Partial Mirror 1 Size (GB)=4
+EDKII Menu->Socket Configuration->Memory Configuration->Enforce Population POR=Disable Enforcement
+EDKII Menu->Socket Configuration->Uncore Configuration->Uncore General Configuration->Directory Mode Enable=Disable
+
+<<< type=oneof, key=lock chipset, value=0x0
+<<< type=oneof, key=ev dfx features, value=0x1
+<<< type=oneof, key=system errors, value=0x1
+<<< type=oneof, key=whea support, value=0x1
+<<< type=oneof, key=whea error injection support, value=0x1
+<<< type=oneof, key=whea error injection 5.0 extension, value=0x1
+<<< type=oneof, key=spare interrupt, value=0x1
+<<< type=oneof, key=mirror mode, value=0x3
+<<< type=numeric, key=partial mirror 1 size (gb), value=0x4
+<<< type=oneof, key=enforce population por, value=0x0
+<<< type=oneof, key=directory mode enable, value=0x0
